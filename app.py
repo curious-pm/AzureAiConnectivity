@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import json
+import time
 from typing import Dict, Any, Iterator
 
 class AzureOpenAIChat:
@@ -132,7 +133,8 @@ def main():
             st.session_state.parameters = st.session_state.default_parameters.copy()
 
             # Trigger a rerun to update the sliders
-            st.experimental_rerun()
+            st.experimental_set_query_params(_=int(time.time()))
+
         st.write("---")
         st.write("### Parameter Descriptions:")
         st.write("**Temperature:** Increase randomness of the response.")
