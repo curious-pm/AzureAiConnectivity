@@ -132,8 +132,9 @@ def main():
             # Reset all parameters to their default values
             st.session_state.parameters = st.session_state.default_parameters.copy()
 
+
             # Trigger a rerun to update the sliders
-            st.query_params(_=int(time.time()))
+            st.experimental_set_query_params(_=int(time.time()))
 
 
         st.write("---")
