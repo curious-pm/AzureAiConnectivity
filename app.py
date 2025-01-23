@@ -6,9 +6,11 @@ from typing import Dict, Any, Iterator
 
 class AzureOpenAIChat:
     def __init__(self):
+        # Retrieve API credentials from Streamlit secrets
         self.API_ENDPOINT = st.secrets.get("AZURE_OPENAI_API_ENDPOINT", "")
         self.API_KEY = st.secrets.get("AZURE_OPENAI_API_KEY", "")  
 
+        # Ensure API key is available
         if not self.API_KEY:
             raise ValueError("Azure OpenAI API Key is missing.")
 
@@ -27,6 +29,7 @@ class AzureOpenAIChat:
             "api-key": self.API_KEY,
         }
 
+        # Define request payload
         data = {
             "messages": [{"role": "user", "content": query}],
             "max_tokens": max_tokens,
@@ -34,10 +37,11 @@ class AzureOpenAIChat:
             "top_p": top_p,
             "frequency_penalty": frequency_penalty,
             "presence_penalty": presence_penalty,
-            "stream": True  # Enable streaming
+            "stream": True  # Enable streaming mode
         }
 
         try:
+            # Make a POST request to the Azure OpenAI endpoint
             response = requests.post(
                 self.API_ENDPOINT,
                 headers=headers,
@@ -46,6 +50,7 @@ class AzureOpenAIChat:
             )
             response.raise_for_status()
 
+            # Process the response stream line by line
             for line in response.iter_lines():
                 if line.strip() == b'data: [DONE]':
                     break
@@ -64,20 +69,19 @@ class AzureOpenAIChat:
         except Exception as e:
             raise RuntimeError(f"Unexpected error: {str(e)}")
 
-
 def main():
-    st.set_page_config(page_title="OpenAI Playground", page_icon="💬")
-    st.title("OpenAI Playground")
+    st.set_page_config(page_title="Azure AI Chat", page_icon="\U0001F4AC")
+    st.title("Open Ai Chat")
 
     # Initialize chat history in session state
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    # Sidebar for parameters
+    # Sidebar for configuring model parameters
     with st.sidebar:
         st.header("Model Parameters")
 
-        # Initialize default and current parameter values in session state
+        # Store default and current parameter values in session state
         if "parameters" not in st.session_state:
             st.session_state.parameters = {
                 "temperature": 0.7,
@@ -87,80 +91,48 @@ def main():
             }
             st.session_state.default_parameters = st.session_state.parameters.copy()
 
-        # Create sliders for each parameter
-        temperature = st.slider(
-            "Temperature",
-            0.0,
-            2.0,
-            st.session_state.parameters["temperature"],
-            0.1,
-            key="temperature_slider",
-        )
-        top_p = st.slider(
-            "Top P",
-            0.0,
-            1.0,
-            st.session_state.parameters["top_p"],
-            0.1,
-            key="top_p_slider",
-        )
-        frequency_penalty = st.slider(
-            "Frequency Penalty",
-            0.0,
-            2.0,
-            st.session_state.parameters["frequency_penalty"],
-            0.1,
-            key="frequency_penalty_slider",
-        )
-        presence_penalty = st.slider(
-            "Presence Penalty",
-            0.0,
-            2.0,
-            st.session_state.parameters["presence_penalty"],
-            0.1,
-            key="presence_penalty_slider",
-        )
+        # UI sliders for model parameters
+        temperature = st.slider("Temperature", 0.0, 2.0, st.session_state.parameters["temperature"], 0.1)
+        top_p = st.slider("Top P", 0.0, 1.0, st.session_state.parameters["top_p"], 0.1)
+        frequency_penalty = st.slider("Frequency Penalty", 0.0, 2.0, st.session_state.parameters["frequency_penalty"], 0.1)
+        presence_penalty = st.slider("Presence Penalty", 0.0, 2.0, st.session_state.parameters["presence_penalty"], 0.1)
 
         # Update session state when sliders change
-        st.session_state.parameters["temperature"] = temperature
-        st.session_state.parameters["top_p"] = top_p
-        st.session_state.parameters["frequency_penalty"] = frequency_penalty
-        st.session_state.parameters["presence_penalty"] = presence_penalty
+        st.session_state.parameters.update({
+            "temperature": temperature,
+            "top_p": top_p,
+            "frequency_penalty": frequency_penalty,
+            "presence_penalty": presence_penalty,
+        })
 
-        # Add a reset button
+        # Reset to default values button
         if st.button("Reset to Defaults"):
-            # Reset all parameters to their default values
             st.session_state.parameters = st.session_state.default_parameters.copy()
-
-
-            # Trigger a rerun to update the sliders
             st.experimental_set_query_params(_=int(time.time()))
 
-
+        # Explanation of parameters
         st.write("---")
         st.write("### Parameter Descriptions:")
         st.write("**Temperature:** Increase randomness of the response.")
         st.write("**Top P:** Limit the response to top probability tokens (nucleus sampling).")
         st.write("**Frequency Penalty:** Penalize repeated tokens to reduce redundancy.")
         st.write("**Presence Penalty:** Encourage diverse topics by penalizing existing tokens.")
+
     # Display chat history
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Chat input
+    # Chat input field
     if prompt := st.chat_input("Enter your message"):
-        # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
 
-        # Display user message
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Generate and display streaming response
         chat_client = AzureOpenAIChat()
 
-        # Create a placeholder for the streaming response
+        # Display response with real-time updates
         with st.chat_message("assistant"):
             response_placeholder = st.empty()
             full_response = ""
@@ -175,49 +147,12 @@ def main():
                     presence_penalty=st.session_state.parameters["presence_penalty"],
                 ):
                     full_response += text_chunk
-                    # Update response in real-time
                     response_placeholder.markdown(full_response + "▌")
-
-                # Final update without cursor
                 response_placeholder.markdown(full_response)
-
-                # Add assistant's message to chat history
-                st.session_state.messages.append({
-                    "role": "assistant",
-                    "content": full_response,
-                })
-
+                st.session_state.messages.append({"role": "assistant", "content": full_response})
             except RuntimeError as err:
                 st.error(f"Error generating response: {err}")
                 response_placeholder.markdown("Sorry, I couldn't generate a response.")
 
-
 if __name__ == "__main__":
     main()
-     # Footer with text and link
-    st.markdown(
-        """
-        <style>
-        .footer {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-size: 14px;
-            color: #666;
-            text-align: right;
-            z-index: 1000;
-        }
-        .footer a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        </style>
-        <div class="footer">
-            By: <a href="https://nas.io/curious-pm" target="_blank">https://nas.io/curious-pm</a>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
