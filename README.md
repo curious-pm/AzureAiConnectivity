@@ -169,41 +169,14 @@ project-folder/
 
 ---
 
-# Screenshots
+## Screenshots
 
-1. **Chat Interface**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406335391-c845b8b1-79b7-41b7-ad77-54d5d3a616b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDI5NDQsIm5iZiI6MTczNzcwMjY0NCwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkxLWM4NDViOGIxLTc5YjctNDFiNy1hZDc3LTU0ZDVkM2E2MTZiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzEwNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NmNmMDExOTFlZDkzZWI3MGEzN2YwMGI5YWQ4YWUyMGQ0ZGViNzE2NGU3OWY4ZmE2NjhhN2VjNmU1ZDY4YzNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fTnL4zw_2M9k5hOQIpr711TIL6r5dkX01s5zFWjQHYA" 
-        style="max-width: 400px; 
-               display: block;
-               margin: 1rem 0;
-               border-radius: 8px;
-               box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-               transition: transform 0.2s;
-               cursor: pointer;"
-        alt="Chat Interface"
-        onclick="this.classList.toggle('expanded')"
-   >
+1. **Chat Interface:**  
+   <img src="https://private-user-images.githubusercontent.com/190357403/406335391-c845b8b1-79b7-41b7-ad77-54d5d3a616b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDI5NDQsIm5iZiI6MTczNzcwMjY0NCwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkxLWM4NDViOGIxLTc5YjctNDFiNy1hZDc3LTU0ZDVkM2E2MTZiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzEwNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NmNmMDExOTFlZDkzZWI3MGEzN2YwMGI5YWQ4YWUyMGQ0ZGViNzE2NGU3OWY4ZmE2NjhhN2VjNmU1ZDY4YzNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fTnL4zw_2M9k5hOQIpr711TIL6r5dkX01s5zFWjQHYA" style="max-width: 400px; width: 100%; height: auto; object-fit: contain; image-rendering: -webkit-optimize-contrast;" alt="Chat Interface">
 
-2. **Sidebar Parameters**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDM1ODUsIm5iZiI6MTczNzcwMzI4NSwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkyLWVlZTUxMzUwLTE5MmItNDMxYS05YzM0LTllNTViZTk2M2UwMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wOTk3MGFlYTcyNmY1YWE5NDc3NjA3M2UwZWJmMjkxMDcyYmNhMThiODRhYjMzMGJiZGE5ZTM4ODZjMTEyZGExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._Bzop8dOnozzGc728cHr0SSfBMIsxCCm3m0f0RbzvFw" 
-        style="max-width: 400px;
-               display: block;
-               margin: 1rem 0;
-               border-radius: 8px;
-               box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-               transition: transform 0.2s;
-               cursor: pointer;"
-        alt="Sidebar Parameters"
-        onclick="this.classList.toggle('expanded')"
-   >
+2. **Sidebar for Parameters:**  
+   <img src="https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDM1ODUsIm5iZiI6MTczNzcwMzI4NSwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkyLWVlZTUxMzUwLTE5MmItNDMxYS05YzM0LTllNTViZTk2M2UwMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wOTk3MGFlYTcyNmY1YWE5NDc3NjA3M2UwZWJmMjkxMDcyYmNhMThiODRhYjMzMGJiZGE5ZTM4ODZjMTEyZGExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._Bzop8dOnozzGc728cHr0SSfBMIsxCCm3m0f0RbzvFw" style="max-width: 400px; width: 100%; height: auto; object-fit: contain; image-rendering: -webkit-optimize-contrast;" alt="Sidebar Parameters">
 
-<style>
-.expanded {
-    transform: scale(1.5);
-    z-index: 100;
-    position: relative;
-}
-</style>
 
 ---
 
