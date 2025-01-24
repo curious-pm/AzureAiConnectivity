@@ -1,5 +1,5 @@
 ## Join the Community
-[Join Curious PM Community](https://nas.io/curious-pm) to connect, share, and learn with others!
+[Join Curious PM Community](https://curious.pm/) to connect, share, and learn with others!
 
 ---
 # Azure OpenAI Chat
