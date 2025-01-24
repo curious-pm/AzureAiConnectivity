@@ -172,10 +172,10 @@ project-folder/
 ## Screenshots
 
 1. **Chat Interface:**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406349458-714e33b3-dc09-48b3-ae5c-1440a6d18594.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDQ5MDIsIm5iZiI6MTczNzcwNDYwMiwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzQ5NDU4LTcxNGUzM2IzLWRjMDktNDhiMy1hZTVjLTE0NDBhNmQxODU5NC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzQzMjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NGViOTRlOGRhMzg1Y2RjNDA4YmY1MWE1NDc3MWYwODBkMWZiODM5YTY4NmIzNGRhOWYwZGYwZjI3MTRhMzY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.3YACBG7h7OQAMvPwmEW5rhHm6bBilHoBywNnNj2Ncv0" style="width: 400px; image-rendering: optimizeSpeed;" alt="Chat Interface">
+   <img src="https://github.com/user-attachments/assets/ba59c3db-8d3b-45a4-854a-d0fcc943e25a" style="width: 400px; image-rendering: optimizeSpeed;" alt="Chat Interface">
 
 2. **Sidebar for Parameters:**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDM1ODUsIm5iZiI6MTczNzcwMzI4NSwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkyLWVlZTUxMzUwLTE5MmItNDMxYS05YzM0LTllNTViZTk2M2UwMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzIxMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wOTk3MGFlYTcyNmY1YWE5NDc3NjA3M2UwZWJmMjkxMDcyYmNhMThiODRhYjMzMGJiZGE5ZTM4ODZjMTEyZGExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._Bzop8dOnozzGc728cHr0SSfBMIsxCCm3m0f0RbzvFw" style="width: 250px; image-rendering: optimizeSpeed;" alt="Sidebar Parameters">
+   <img src="https://github.com/user-attachments/assets/01d161f4-d0b8-4ec7-a57a-87efae5ee8c1" style="width: 250px; image-rendering: optimizeSpeed;" alt="Sidebar Parameters">
 
 
 ---
