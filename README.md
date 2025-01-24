@@ -172,10 +172,10 @@ project-folder/
 ## Screenshots
 
 1. **Chat Interface:**  
-   <img src="https://github.com/user-attachments/assets/ba59c3db-8d3b-45a4-854a-d0fcc943e25a" style="width: 400px; image-rendering: optimizeSpeed;" alt="Chat Interface">
+   <img src="https://github.com/user-attachments/assets/01d161f4-d0b8-4ec7-a57a-87efae5ee8c1" style="width: 400px; image-rendering: optimizeSpeed;" alt="Chat Interface">
 
 2. **Sidebar for Parameters:**  
-   <img src="https://github.com/user-attachments/assets/01d161f4-d0b8-4ec7-a57a-87efae5ee8c1" style="width: 250px; image-rendering: optimizeSpeed;" alt="Sidebar Parameters">
+   <img src="https://github.com/user-attachments/assets/ba59c3db-8d3b-45a4-854a-d0fcc943e25a" style="width: 250px; image-rendering: optimizeSpeed;" alt="Sidebar Parameters">
 
 
 ---
