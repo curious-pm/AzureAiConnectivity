@@ -1,7 +1,9 @@
 ## Join the Community
 [Join Curious PM Community](https://nas.io/curious-pm) to connect, share, and learn with others!
 
+---
 # Azure OpenAI Chat
+
 This project provides an easy-to-use chat interface built with Streamlit and Azure OpenAI API. Users can ask questions, receive AI-powered responses in real-time, and adjust model settings to refine responses.
 
 ## What the Code Does
@@ -167,18 +169,13 @@ project-folder/
 
 ---
 
-## Join the Community
-[Join Curious PM Community](https://nas.io/curious-pm) to connect, share, and learn with others!
-
----
-
 ## Screenshots
 
 1. **Chat Interface:**
-   ![Chat Screenshot](#) *(Insert screenshot link)*
+   ![Chat Interface](https://private-user-images.githubusercontent.com/190357403/406335391-c845b8b1-79b7-41b7-ad77-54d5d3a616b3.png)
 
 2. **Sidebar for Parameters:**
-   ![Sidebar Screenshot](#) *(Insert screenshot link)*
+   ![Sidebar Parameters](https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png)
 
 ---
 
