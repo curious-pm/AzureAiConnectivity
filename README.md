@@ -172,10 +172,10 @@ project-folder/
 ## Screenshots
 
 1. **Chat Interface:**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406335391-c845b8b1-79b7-41b7-ad77-54d5d3a616b3.png?jwt=..." width="500" height="300" alt="Chat Interface">
+   <img src="https://private-user-images.githubusercontent.com/190357403/406335391-c845b8b1-79b7-41b7-ad77-54d5d3a616b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDI5NDQsIm5iZiI6MTczNzcwMjY0NCwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkxLWM4NDViOGIxLTc5YjctNDFiNy1hZDc3LTU0ZDVkM2E2MTZiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzEwNDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NmNmMDExOTFlZDkzZWI3MGEzN2YwMGI5YWQ4YWUyMGQ0ZGViNzE2NGU3OWY4ZmE2NjhhN2VjNmU1ZDY4YzNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fTnL4zw_2M9k5hOQIpr711TIL6r5dkX01s5zFWjQHYA" width="500" height="300" alt="Chat Interface">
 
 2. **Sidebar for Parameters:**  
-   <img src="https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png?jwt=..." width="500" height="300" alt="Sidebar Parameters">
+   <img src="https://private-user-images.githubusercontent.com/190357403/406335392-eee51350-192b-431a-9c34-9e55be963e00.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc3MDMxNjIsIm5iZiI6MTczNzcwMjg2MiwicGF0aCI6Ii8xOTAzNTc0MDMvNDA2MzM1MzkyLWVlZTUxMzUwLTE5MmItNDMxYS05YzM0LTllNTViZTk2M2UwMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyNFQwNzE0MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMDdiODYzMzNhNzRiNGU5MmNjNjFlYzRmMThiNTU3ZjhkMWY4YTY4NTE4YTc0ZmE4YTZlM2Y4ZjEzNzgxZjk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Bef62FpaEBOv3tDfw9D_aCfCdGR0It9z6IFmh2AywdI" width="500" height="300" alt="Sidebar Parameters">
 
 
 ---
